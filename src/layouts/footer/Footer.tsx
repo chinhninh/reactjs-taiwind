@@ -14,8 +14,8 @@ import "./footer.scss";
 import Strikethrough from "../../components/strikethrough/Strikethrough";
 
 const Footer = () => {
-  return (
-    <div className="container mx-auto">
+  const renderFooterPC = () => (
+    <div className="hidden md:hidden lg:block ">
       <Strikethrough />
       <div className=" px-4 pb-11 pt-16  flex-row flex relative footer-container">
         <div className="max-w-sm  md:max-w-full md:mx-0 md:w-1/2 lg:w-1/3">
@@ -95,6 +95,94 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+
+  const renderFooterTablet = () => (
+    <div className="hidden lg:hidden md:block">
+      <Strikethrough />
+      <div className="px-4 pb-11 pt-6  flex-row flex relative footer-container">
+        <div className="max-w-sm  w-1/4">
+          <img src={logoFooter} alt="" className=" mb-4" />
+          <div className="text-[18px] font-semibold font-goldmanBold title-footer-tablet">Contact Us</div>
+          <div className="flex mt-4">
+            <span className="text-white font-inter mr-1">Email:</span>
+            <span
+              className="text-base text-white font-inter cursor-pointer hover:opacity-80"
+              onClick={() => window.open("mailto:hello@gemuni.io")}
+            >
+              hello@gemuni.io
+            </span>
+          </div>
+        </div>
+        <div className="max-w-sm mx-auto pt-5 md:max-w-full md:mx-0 w-1/4">
+          <div className="text-[18px] font-semibold mb-4 font-goldmanBold title-footer-tablet">Explore More</div>
+          <div className="text-base text-white font-inter cursor-pointer hover:opacity-80">Home</div>
+          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Play Games</div>
+          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">NFT Marketplace</div>
+          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Whitepaper</div>
+          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Pitch Deck</div>
+          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">FAQs</div>
+        </div>
+        <div className="max-w-sm mx-auto pt-5 w-1/2">
+          <div className="text-[18px] font-semibold mb-10 font-goldmanBold title-footer-tablet">Community & Social Channels</div>
+          <div className="flex mb-8">
+            <img src={iconTwitter} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconBatman} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconIntagam} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconPlay} alt="" className="cursor-pointer hover:opacity-80" />
+            <img src={iconFacebook} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconM} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconTikTok} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+          </div>
+          <div className="flex mb-8 items-center">
+            <img src={iconFacebook} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <div className="text-[17px] font-semibold text-white underline underline-offset-1 cursor-pointer">Official Channel, Global Group</div>
+          </div>
+          <div className="relative">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autoComplete="given-name"
+              className="w-full h-14 pl-4 input-email rounded-3xl"
+              placeholder="Enter your email"
+            />
+            <img src={iconPlaneNotBorder} alt="" className="absolute right-4 top-3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderFooterMobile = () => (
+    <div className="md:hidden sm:block">
+      <Strikethrough />
+      <div className="text-center justify-center px-4 pb-11 pt-8  flex-row flex relative footer-container">
+        <div className="max-w-sm  md:max-w-full">
+          <img src={logoFooter} alt="" className="m-auto"/>
+          <div className="text-[16px] text-white font-semibold mt-7">Team</div>
+          <div className="text-[14px] font-medium link-footer-mobile mt-5 cursor-pointer hover:opacity-80">Project Landing Page</div>
+          <div className="text-[14px] font-medium link-footer-mobile mt-4 cursor-pointer hover:opacity-80">Contact Us</div>
+          <div className="text-[16px] text-white font-semibold mt-7">Support</div>
+          <div className="text-[14px] font-medium link-footer-mobile mt-5 cursor-pointer">FAQ</div>
+          <div className="text-[14px] font-medium link-footer-mobile mt-4 cursor-pointer hover:opacity-80">Terms & Conditions</div>
+          <div className="text-[14px] font-medium link-footer-mobile mt-4 cursor-pointer hover:opacity-80">Privacy</div>
+          <div className="flex mt-10">
+            <img src={iconTwitter} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconBatman} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconIntagam} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="container mx-auto">
+      {renderFooterPC()}
+      {renderFooterTablet()}
+      {renderFooterMobile()}
     </div>
   );
 };
