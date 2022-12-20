@@ -10,6 +10,19 @@ import iconTikTok from "../../assets/img/svg/icon-tiktok.svg";
 import iconInternet from "../../assets/img/svg/icon-internet.svg";
 import iconPlane from "../../assets/img/svg/icon-plane.svg";
 import iconPlaneNotBorder from "../../assets/img/svg/icon-plane-not-border.svg";
+
+import iconTwitterColor from "../../assets/img/svg/icon-twitter-color.svg";
+import iconBatmanColor from "../../assets/img/svg/icon-batman-color.svg";
+import iconFacebookColor from "../../assets/img/svg/icon-facebook-color.svg";
+
+import iconYoutubeColor from "../../assets/img/svg/icon-youtube-color.svg";
+import iconIntagamColor from "../../assets/img/svg/icon-intagam-color.svg";
+import iconMColor from "../../assets/img/svg/icon-m-color.svg";
+
+import iconTikTokColor from "../../assets/img/svg/icon-tiktok-color.svg";
+import iconTelegamColor from "../../assets/img/svg/icon-telegram-color.svg";
+import iconPlayColor from "../../assets/img/svg/icon-play-color.svg";
+
 import "./footer.scss";
 import Strikethrough from "../../components/strikethrough/Strikethrough";
 
@@ -118,37 +131,40 @@ const Footer = () => {
         <div className="max-w-sm mx-auto pt-5 md:max-w-full md:mx-0 w-1/4">
           <div className="text-[18px] font-semibold mb-4 font-goldmanBold title-footer-tablet">Explore More</div>
           <div className="text-base text-white font-inter cursor-pointer hover:opacity-80">Home</div>
-          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Play Games</div>
-          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">NFT Marketplace</div>
-          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Whitepaper</div>
-          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">Pitch Deck</div>
-          <div className="text-base text-white mt-4 font-inter cursor-pointer hover:opacity-80">FAQs</div>
+          <div className="text-base text-white mt-3 font-inter cursor-pointer hover:opacity-80">Play Games</div>
+          <div className="text-base text-white mt-3 font-inter cursor-pointer hover:opacity-80">NFT Marketplace</div>
+          <div className="text-base text-white mt-3 font-inter cursor-pointer hover:opacity-80">Whitepaper</div>
+          <div className="text-base text-white mt-3 font-inter cursor-pointer hover:opacity-80">Pitch Deck</div>
+          <div className="text-base text-white mt-3 font-inter cursor-pointer hover:opacity-80">FAQs</div>
         </div>
         <div className="max-w-sm mx-auto pt-5 w-1/2">
-          <div className="text-[18px] font-semibold mb-10 font-goldmanBold title-footer-tablet">Community & Social Channels</div>
-          <div className="flex mb-8">
-            <img src={iconTwitter} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
-            <img src={iconBatman} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
-            <img src={iconIntagam} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
-            <img src={iconPlay} alt="" className="cursor-pointer hover:opacity-80" />
-            <img src={iconFacebook} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
-            <img src={iconM} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
-            <img src={iconTikTok} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+          <div className="text-[18px] font-semibold mb-4 font-goldmanBold title-footer-tablet">Community & Social Channels</div>
+          <div className="flex mb-4">
+            <img src={iconTwitterColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconBatmanColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconFacebookColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconYoutubeColor} alt="" className="cursor-pointer hover:opacity-80" />
+            <img src={iconIntagamColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconMColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+            <img src={iconTikTokColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
           </div>
-          <div className="flex mb-8 items-center">
-            <img src={iconFacebook} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
+          <div className="flex mb-4 items-center">
+            <img src={iconTelegamColor} alt="" className="mr-4 cursor-pointer hover:opacity-80" />
             <div className="text-[17px] font-semibold text-white underline underline-offset-1 cursor-pointer">Official Channel, Global Group</div>
           </div>
+          <div className="text-[18px] font-semibold font-goldmanBold title-footer-tablet">Join Newsletter</div>
+          <div className="text-[10px] font-semibold font-goldmanBold title-footer-tablet" style={{color: '#008CF0'}}>Subscribe to get more latest news and special offers from GemUni.s</div>
           <div className="relative">
             <input
               type="text"
               name="email"
               id="email"
               autoComplete="given-name"
-              className="w-full h-14 pl-4 input-email rounded-3xl"
+              className="w-full h-14 pl-4 input-email rounded-xl mt-4"
               placeholder="Enter your email"
+              style={{background: '#1F2026', border: '1.5px solid #31333A'}}
             />
-            <img src={iconPlaneNotBorder} alt="" className="absolute right-4 top-3" />
+            <img src={iconPlayColor} alt="" className="absolute right-2 top-7" />
           </div>
         </div>
       </div>
