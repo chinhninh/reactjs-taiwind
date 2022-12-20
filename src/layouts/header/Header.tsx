@@ -1,4 +1,4 @@
-﻿import logoFooter from "../../assets/img/logo-footer.svg";
+﻿import logoFooter from "../../assets/img/logo/logo-footer.svg";
 import iconConnetWallet from "../../assets/img/icon-connect-wallet.svg";
 import iconUp from "../../assets/img/icon-up.svg";
 import iconCertik from "../../assets/img/icon-certik.svg";
@@ -50,16 +50,18 @@ const Header = () => {
 
   const renderButtonsFooter = (name: string, isNotMr?: boolean) => {
     const isActived = name === "Limit";
-    const className = `cursor-pointer hover:opacity-70 text-sm text-white ${isActived ? "button-footer-container" : ""} ${isNotMr ? "" : "mr-8"}`;
+    const className = `cursor-pointer hover:opacity-70 text-sm text-white ${
+      isActived ? "button-footer-container" : ""
+    } ${isNotMr ? "" : "mr-8"}`;
     return <div className={className}>{name}</div>;
   };
 
   return (
     <div className="flex relative w-full header-container max-[1016px]:!pb-4">
-      <div className="w-1/12">
+      <div className="w-1/12 relative">
         <img src={logoFooter} alt="" className="w-20 min-[1016px]:mt-4" />
       </div>
-      <div className="w-11/12">
+      <div className="w-11/12 relative">
         <div className="min-[1016px]:block hidden">
           <div className="flex justify-end">
             {renderItemCrypto(iconCertik, "CERTIK")}
@@ -74,7 +76,9 @@ const Header = () => {
             </div>
             <div className="flex px-6 py-3 items-center button-connect-wallet relative cursor-pointer hover:opacity-70">
               <img src={iconConnetWallet} alt="" className="w-6 mr-2" />
-              <span className="font-bold text-sm text-white font-inter">Connect Wallet</span>
+              <span className="font-bold text-sm text-white font-inter">
+                Connect Wallet
+              </span>
               <div className="absolute background-footer-button bottom-0" />
             </div>
           </div>
