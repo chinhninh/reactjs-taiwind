@@ -39,7 +39,7 @@ const Header = () => {
     const isActived = name === "Home" ? true : false;
     return (
       <div
-        className={`text-sm font-bold border-bottom-tag-page pb-5 cursor-pointer hover:opacity-70 ${className} ${
+        className={`text-sm font-bold border-bottom-tag-page pb-5 text-gray-500 cursor-pointer hover:text-white ${className} ${
           isActived ? "text-white border-bottom-tag-page-actived" : ""
         }`}
       >
@@ -50,8 +50,8 @@ const Header = () => {
 
   const renderButtonsFooter = (name: string, isNotMr?: boolean) => {
     const isActived = name === "Limit";
-    const className = `cursor-pointer hover:opacity-70 text-sm text-white ${
-      isActived ? "button-footer-container" : ""
+    const className = `cursor-pointer text-sm text-white button-footer ${
+      isActived ? "button-footer-actived" : ""
     } ${isNotMr ? "" : "mr-8"}`;
     return <div className={className}>{name}</div>;
   };

@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <img src={logoFooter} alt="" className=" mb-7 mt-4" />
           <div className="flex items-center">
-            <span className="text-sm font-inter mr-1">Investment:</span>
+            <span className="text-sm font-inter mr-1 text-gray-500">Investment:</span>
             <span
               className="text-base text-white font-inter cursor-pointer hover:opacity-80"
               onClick={() => window.open("mailto:hello@gemuni.io")}
@@ -46,7 +46,7 @@ const Footer = () => {
             </span>
           </div>
           <div className="flex items-center mt-4">
-            <span className="text-sm font-inter mr-1">
+            <span className="text-sm font-inter mr-1 text-gray-500">
               Marketing & Support:
             </span>
             <span

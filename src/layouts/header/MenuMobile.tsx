@@ -9,7 +9,6 @@ function MenuMobile() {
     width: 0,
     height: 0,
   });
-  console.log("size: ", size);
   useEffect(() => {
     const handleResize = () => {
       setSize({

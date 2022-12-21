@@ -6,6 +6,11 @@
   font-family: Inter;
 }
 
+.font-poppins {
+  font-family: Poppins;
+}
+
+
 .background-header {
   background-image: url("assets/img/background/header.png");
   position: absolute;
@@ -37,4 +42,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.background-image {
+  background-image: url("assets/img/background/footer-1.png"), url("assets/img/background/footer.png"), url("assets/img/background/body.png");
+  // position: absolute;
+  // width: 1448px;
+  // height: 773px;
+  // bottom: 0px;
+  background-position: top, bottom, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain , cover;
+  // background-color: #110E27;
 }

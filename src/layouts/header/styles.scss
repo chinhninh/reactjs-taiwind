@@ -23,6 +23,10 @@
     border-bottom: 1px solid rgb(65, 57, 134, 0.5);
   }
 
+  .border-bottom-tag-page:hover {
+    border-bottom: 2px solid #413986;
+  }
+
   .border-bottom-tag-page-actived {
     border-bottom: 2px solid #413986;
   }
@@ -36,7 +40,13 @@
     padding: 5px 11px 5px 9px;
   }
 
-  .button-footer-container {
+  .button-footer:hover {
+    background: linear-gradient(90deg, #06d3e6 -0.15%, #ffdb0d 96.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .button-footer-actived {
     background: linear-gradient(90deg, #06d3e6 -0.15%, #ffdb0d 96.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
